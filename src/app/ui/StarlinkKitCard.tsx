@@ -35,7 +35,7 @@ export default function StarlinkKitCard({
         <>
             <div className={`${maxWidthClass} ${minHeightClass} flex flex-col gap-8 ${className}`}>
                 <div className="flex flex-col gap-6">
-                    <h2 className="font-inter text-[#131313] text-5xl font-semibold tracking-[-0.48px]">
+                    <h2 className="font-inter text-[#131313] text-5xl font-semibold leading-11 tracking-[-0.48px]">
                         {title}
                     </h2>
 
@@ -50,7 +50,7 @@ export default function StarlinkKitCard({
 
                 {description && PriceBlock}
 
-                <CustomButton onClick={onCtaClick}>{ctaText}</CustomButton>
+                <CustomButton onClick={onCtaClick} className="max-w-[305px]">{ctaText}</CustomButton>
             </div>
         </>
     );
