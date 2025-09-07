@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {CustomButton} from "@/app/ui/CustomButton";
+import {CustomButton} from "@/ui/CustomButton";
 
 type Variant = "light" | "primary" | "dark" | "cornflower-blue" | "periwinkle";
 

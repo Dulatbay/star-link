@@ -1,5 +1,5 @@
 import React from "react";
-import {CustomButton} from "@/app/ui/CustomButton";
+import {CustomButton} from "@/ui/CustomButton";
 
 interface StarlinkKitCardProps {
     title: string;

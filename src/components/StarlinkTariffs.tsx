@@ -1,11 +1,11 @@
-import Container from "@/app/ui/Container";
+import Container from "@/ui/Container";
 import React from "react";
-import PricingCard from "@/app/ui/PricingCard";
-import treeIcon from "../../../public/pricing-card-icons/tree-icon.svg";
-import tractorIcon from "../../../public/pricing-card-icons/tractor-icon.svg";
-import briefcaseIcon from "../../../public/pricing-card-icons/briefcase-icon.svg";
+import PricingCard from "@/ui/PricingCard";
+import treeIcon from "../../public/pricing-card-icons/tree-icon.svg";
+import tractorIcon from "../../public/pricing-card-icons/tractor-icon.svg";
+import briefcaseIcon from "../../public/pricing-card-icons/briefcase-icon.svg";
 
-export default function Tariffs() {
+export default function StarlinkTariffs() {
     return (
         <section className="bg-[#F3F3F5] w-full">
             <Container className="pt-[120px] pb-20">

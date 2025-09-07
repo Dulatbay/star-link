@@ -1,6 +1,9 @@
-import type { Metadata } from "next";
-import { Roboto, Inter } from "next/font/google";
+import type {Metadata} from "next";
+import {Roboto, Inter} from "next/font/google";
 import "./globals.css";
+import Hero from "@/ui/Hero";
+import React from "react";
+import Footer from "@/ui/Footer";
 
 const roboto = Roboto({
     variable: "--font-roboto",
@@ -15,22 +18,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Starlink Kazakhstan - Спутниковый интернет в Казахстане",
-  description: "Starlink — надёжный спутниковый интернет для фермеров, хозяйств и удалённых объектов в Казахстане. Официально с 13 августа 2025 года.",
+    title: "Starlink Kazakhstan - Спутниковый интернет в Казахстане",
+    description: "Starlink — надёжный спутниковый интернет для фермеров, хозяйств и удалённых объектов в Казахстане. Официально с 13 августа 2025 года.",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${roboto.className} ${inter.variable} antialiased`}
-      >
+    return (
+        <html lang="en">
+        <body
+            className={`${roboto.className} ${inter.variable} antialiased`}
+        >
+        <Hero/>
         {children}
-      </body>
-    </html>
-  );
+        <Footer/>
+        </body>
+        </html>
+    );
 }

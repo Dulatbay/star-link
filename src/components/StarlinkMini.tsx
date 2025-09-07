@@ -1,9 +1,9 @@
-import StarlinkKitCard from "@/app/ui/StarlinkKitCard";
-import Container from "@/app/ui/Container";
-import lightningIcon from "../../../public/advantage-icons/lightning-icon.svg";
-import sunriseIcon from "../../../public/advantage-icons/sunrise-icon.svg";
-import bullseyeArrowIcon from "../../../public/advantage-icons/bullseye-arrow-icon.svg";
-import Advantage from "@/app/ui/Advantage";
+import StarlinkKitCard from "@/ui/StarlinkKitCard";
+import Container from "@/ui/Container";
+import lightningIcon from "../../public/advantage-icons/lightning-icon.svg";
+import sunriseIcon from "../../public/advantage-icons/sunrise-icon.svg";
+import bullseyeArrowIcon from "../../public/advantage-icons/bullseye-arrow-icon.svg";
+import Advantage from "@/ui/Advantage";
 
 const advantages = [
     {icon: lightningIcon, title: "Энергопотребление: 20–40 Вт, до 20 Вт в простое."},

@@ -1,15 +1,15 @@
-import Hero from './ui/Hero';
-import StarlinkStandard from "@/app/components/StarlinkStandard";
-import StarlinkMini from "@/app/components/StarlinkMini";
-import Tariffs from "@/app/components/Tariffs";
+import StarlinkStandard from "@/components/StarlinkStandard";
+import StarlinkMini from "@/components/StarlinkMini";
+import StarlinkTariffs from "@/components/StarlinkTariffs";
+import StarlinkSubmit from "@/components/StarlinkSubmit";
 
 export default function Home() {
     return (
         <>
-            <Hero/>
             <StarlinkStandard/>
             <StarlinkMini/>
-            <Tariffs/>
+            <StarlinkTariffs/>
+            <StarlinkSubmit/>
         </>
     );
 }

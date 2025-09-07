@@ -1,13 +1,13 @@
-import Container from "@/app/ui/Container";
-import settingsIcon from "../../../public/advantage-icons/settings-icon.svg";
-import shieldZapIcon from "../../../public/advantage-icons/shield-zap-icon.svg";
-import lightningIcon from "../../../public/advantage-icons/lightning-icon.svg";
-import sunIcon from "../../../public/advantage-icons/sun-icon.svg";
-import sunriseIcon from "../../../public/advantage-icons/sunrise-icon.svg";
-import starlinkIcon from "../../../public/advantage-icons/starlink-icon.svg";
+import Container from "@/ui/Container";
+import settingsIcon from "../../public/advantage-icons/settings-icon.svg";
+import shieldZapIcon from "../../public/advantage-icons/shield-zap-icon.svg";
+import lightningIcon from "../../public/advantage-icons/lightning-icon.svg";
+import sunIcon from "../../public/advantage-icons/sun-icon.svg";
+import sunriseIcon from "../../public/advantage-icons/sunrise-icon.svg";
+import starlinkIcon from "../../public/advantage-icons/starlink-icon.svg";
 import React from "react";
-import Advantage from "@/app/ui/Advantage";
-import StarlinkKitCard from "@/app/ui/StarlinkKitCard";
+import Advantage from "@/ui/Advantage";
+import StarlinkKitCard from "@/ui/StarlinkKitCard";
 
 const advantages = [
     {icon: settingsIcon, title: "Установка занимает до 1 часа."},
