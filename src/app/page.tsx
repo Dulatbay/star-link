@@ -1,7 +1,13 @@
-import Hero from './components/Hero';
+import Hero from './ui/Hero';
+import StarlinkStandard from "@/app/components/StarlinkStandard";
+import StarlinkMini from "@/app/components/StarlinkMini";
 
 export default function Home() {
-  return (
-    <Hero />
-  );
+    return (
+        <>
+            <Hero/>
+            <StarlinkStandard/>
+            <StarlinkMini/>
+        </>
+    );
 }
