@@ -7,7 +7,7 @@ import InputMask from "@mona-health/react-input-mask";
 import {CustomButton} from "@/ui/CustomButton";
 import {submitSchema, SubmitValues} from "@/schemas/submit";
 
-export default function SubmitForm () {
+export default function SubmitForm() {
     const {
         register,
         control,
@@ -38,20 +38,22 @@ export default function SubmitForm () {
             className="w-full max-w-[640px] flex flex-col gap-10 p-10 bg-[#FFFFFF] rounded-2xl shadow-[0_26px_40px_0_rgba(188,202,255,0.13)]"
         >
             <div className="flex flex-col gap-6">
-                <div>
-                    <label className="block mb-1 font-medium">Имя</label>
+                <div className="flex flex-col gap-1.5">
+                    <label className="block font-medium leading-6 text-lg text-[#333F51]">Имя</label>
                     <input
                         {...register("name")}
                         placeholder="Введите ваше имя"
-                        className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full py-2.5 px-3.5 border border-[#D5DAE1] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#113CB9] shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]"
                     />
                     {errors.name && (
                         <p className="text-red-500 text-sm">{errors.name.message}</p>
                     )}
                 </div>
 
-                <div>
-                    <label className="block mb-1 font-medium">Номер телефона</label>
+                <div className="flex flex-col gap-1.5">
+                    <label className="block font-medium leading-6 text-lg text-[#333F51]">
+                        Номер телефона
+                    </label>
                     <Controller
                         name="phone"
                         control={control}
@@ -61,7 +63,7 @@ export default function SubmitForm () {
                                 placeholder="+7 (___) ___-__-__"
                                 value={field.value || ""}
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => field.onChange(e.target.value)}
-                                className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full py-2.5 px-3.5 border border-[#D5DAE1] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#113CB9] shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]"
                             />
                         )}
                     />
@@ -70,12 +72,14 @@ export default function SubmitForm () {
                     )}
                 </div>
 
-                <div>
-                    <label className="block mb-1 font-medium">Комментарий</label>
+                <div className="flex flex-col gap-1.5">
+                    <label className="block font-medium leading-6 text-lg text-[#333F51]">
+                        Комментарий
+                    </label>
                     <textarea
                         {...register("comment")}
                         placeholder="Напишите ваше сообщение"
-                        className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full py-2.5 px-3.5 border border-[#D5DAE1] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#113CB9] shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]"
                         rows={3}
                     />
                     {errors.comment && (
