@@ -25,7 +25,7 @@ export default function SubmitForm() {
     });
 
     const onSubmit = async (data: SubmitValues) => {
-        console.log("📩 Отправка:", data);
+        console.log("data: ", data);
 
         await new Promise((res) => setTimeout(res, 500));
 
