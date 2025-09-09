@@ -24,9 +24,10 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
 
         switch (variant) {
             case "submit":
-                return `max-h-[72px] w-full bg-[#113CB9] cursor-pointer rounded-2xl text-lg text-white font-medium py-5 shadow-[-4px_-4px_8px_-2px_#051E66_inset,4px_4px_8px_-2px_rgba(255,255,255,0.25)_inset,0_8px_16px_-4px_rgba(17,60,185,0.5)]`;
+                return `max-h-[72px] w-full bg-[#082475] cursor-pointer rounded-[8px] text-lg text-white font-medium py-5 shadow-[-4px_-4px_8px_-2px_#051E66_inset,4px_4px_8px_-2px_rgba(255,255,255,0.25)_inset,0_8px_16px_-4px_rgba(17,60,185,0.5)]`;
             default:
-                return `max-h-[72px] w-full bg-[#113CB9] cursor-pointer rounded-2xl text-lg text-white font-medium px-[63px] py-5 shadow-[0_8px_16px_-4px_rgba(17,60,185,0.5),-4px_-4px_8px_-2px_#051E66_inset,4px_4px_8px_-2px_rgba(255,255,255,0.25)_inset]`;
+                return `max-h-[72px] w-full bg-[#082475] cursor-pointer rounded-[8px] text-lg text-white font-medium py-5
+shadow-[inset_4px_4px_8px_-2px_#FFFFFF40,inset_-4px_-4px_8px_-2px_#051E66,0px_8px_16px_-4px_#113CB980]`;
         }
     };
 
