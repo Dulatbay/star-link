@@ -12,7 +12,7 @@ export default function Container({
                                       className = "",
                                       children,
                                       maxWClass = "max-w-[1440px]",
-                                      pxClass = "px-4 md:px-8 xl:px-16",
+                                      pxClass = "px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16",
                                       fullWidth = false,
                                   }: ContainerProps) {
     if (fullWidth) {

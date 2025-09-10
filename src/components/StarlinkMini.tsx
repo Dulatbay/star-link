@@ -14,15 +14,15 @@ const advantages = [
 export default function StarlinkMini() {
     return (
         <section className="bg-[#FFF] w-full">
-            <Container className="py-[120px]">
-                <div className="w-full flex justify-between">
+            <Container className="py-16 md:py-20 lg:py-[120px]">
+                <div className="w-full flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-0">
                     <StarlinkKitCard
                         title="Комплект Starlink Mini"
                         description="Компактная версия для экспедиций, выездных бригад и мобильных объектов."
                         price="320 000 ₸"
                     />
 
-                    <div className="flex flex-col gap-20">
+                    <div className="flex flex-col gap-8 md:gap-12 lg:gap-20 w-full lg:w-auto">
                         {advantages.map((item, idx) => (
                             <Advantage key={idx} icon={item.icon} title={item.title} />
                         ))}

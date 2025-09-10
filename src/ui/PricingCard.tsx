@@ -67,19 +67,19 @@ export default function PricingCard({
 
     return (
         <div
-            className={`w-full max-w-[415px] rounded-2xl shrink-0 p-10 shadow-[0_26px_40px_0_rgba(188,202,255,0.13)] ${palette.card} ${className || ''}`}>
-            <div className="flex flex-col gap-11">
-                <div className="flex flex-col gap-7">
-                    <div className="flex flex-col gap-5">
+            className={`max-w-[415px] mx-auto lg:mx-0 rounded-2xl shrink-0 p-6 md:p-8 lg:p-10 shadow-[0_26px_40px_0_rgba(188,202,255,0.13)] ${palette.card} ${className || ''}`}>
+            <div className="flex flex-col gap-8 md:gap-10 lg:gap-11">
+                <div className="flex flex-col gap-6 md:gap-7">
+                    <div className="flex flex-col gap-4 md:gap-5">
                         <div
-                            className={`flex bg-[#FFF] h-14 w-14 p-4 justify-center items-center shrink-0 rounded-[100px] `}>
-                            <Image src={icon} alt="" width={22} height={22}/>
+                            className={`flex bg-[#FFF] h-12 w-12 md:h-14 md:w-14 p-3 md:p-4 justify-center items-center shrink-0 rounded-[100px] `}>
+                            <Image src={icon} alt="" width={18} height={18} className="md:w-[22px] md:h-[22px]"/>
                         </div>
 
-                        <div className="flex flex-col gap-6">
-                            <div className="flex flex-col gap-3.5">
-                                <div className="flex gap-3 items-center">
-                                    <h3 className={`font-inter text-[32px] font-semibold tracking-[-1px] ${variant !== "light" ? "text-[#FFF]" : "text-[#131313]"}`}>
+                        <div className="flex flex-col gap-4 md:gap-6">
+                            <div className="flex flex-col gap-2.5 md:gap-3.5">
+                                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-start sm:items-center">
+                                    <h3 className={`font-inter text-2xl md:text-[28px] lg:text-[32px] font-semibold tracking-[-1px] ${variant !== "light" ? "text-[#FFF]" : "text-[#131313]"}`}>
                                         {title}
                                     </h3>
 
@@ -93,14 +93,14 @@ export default function PricingCard({
                                     )}
                                 </div>
 
-                                <p className={`text-lg leading-8 ${palette.sub}`}>{description}</p>
+                                <p className={`text-base md:text-lg leading-6 md:leading-8 ${palette.sub}`}>{description}</p>
                             </div>
 
-                            <div className="flex items-end gap-3">
-                                <span className={`text-6xl font-medium tracking-[-1px] ${variant !== "light" ? "text-[#FFF]" : "text-[#131313]"}`}>
+                            <div className="flex items-end gap-2 md:gap-3">
+                                <span className={`text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-1px] ${variant !== "light" ? "text-[#FFF]" : "text-[#131313]"}`}>
                                     {priceText}
                                 </span>
-                                <span className={`pb-1 text-2xl ${variant !== "light" ? "text-[#FFF]" : "text-[#131313]"}`}>
+                                <span className={`pb-1 text-xl md:text-2xl ${variant !== "light" ? "text-[#FFF]" : "text-[#131313]"}`}>
                                     {per}
                                 </span>
                             </div>

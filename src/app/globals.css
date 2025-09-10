@@ -28,3 +28,19 @@ body {
 .link {
   @apply text-[#5984FF] cursor-pointer;
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    display: inline-flex;
+    animation: scroll 15s linear infinite;
+}
+
+

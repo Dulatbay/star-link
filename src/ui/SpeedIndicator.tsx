@@ -1,4 +1,5 @@
 "use client";
+
 import React, {useEffect, useMemo, useState} from "react";
 
 type Props = {
@@ -82,31 +83,34 @@ export default function SpeedIndicator({
     }, [ticks, radius, active]);
 
     return (
-        <div className="w-full h-[320px] overflow-hidden bg-[#0A2475]">
-            <div className="flex flex-col items-center">
-                <div className="flex items-center gap-6">
-                        <span className="text-white font-medium text-right text-[180px] leading-[160px]">
+        <div className="w-full h-[160px] sm:h-[160px] md:h-[190px] lg:h-[220px] xl:h-[250px] overflow-hidden">
+            <div className="flex flex-col items-center px-4 sm:px-6 md:px-8">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 w-full max-w-4xl">
+                    <div className="flex-shrink-0">
+                        <span className="text-white font-medium text-center block text-[45px] xs:text-[55px] sm:text-[65px] md:text-[90px] lg:text-[120px] xl:text-[140px] 2xl:text-[160px] leading-[40px] xs:leading-[50px] sm:leading-[60px] md:leading-[85px] lg:leading-[115px] xl:leading-[135px] 2xl:leading-[155px]">
                           {current}
                         </span>
+                    </div>
 
-                    <div className="flex flex-col gap-4 text-white">
-                        <div className="text-[40px] leading-[44px] font-medium">Mbps</div>
+                    <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-4 text-white text-center sm:text-left min-w-0">
+                        <div className="text-lg xs:text-xl sm:text-2xl md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] leading-tight font-medium">Mbps</div>
 
-                        <div className={`flex flex-col leading-6 text-xl gap-1 transition-all duration-500
+                        <div className={`flex flex-col text-center sm:text-left leading-4 sm:leading-5 md:leading-6 text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl gap-0.5 sm:gap-1 transition-all duration-500 ease-out
                                ${showDetails ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
-                            <span>Отдача: {uploadSpeed} мбит/с</span>
-                            <span>Средняя задержка: {latency} мс</span>
-                            <span className="text-[#667085]">данные лета 2025 года.</span>
+                            <span className="whitespace-nowrap">Отдача: {uploadSpeed} мбит/с</span>
+                            <span className="whitespace-nowrap">Средняя задержка: {latency} мс</span>
+                            <span className="text-[#667085] text-[10px] xs:text-xs sm:text-sm md:text-base">данные лета 2025 года.</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="absolute bottom-[-450px] left-1/2 transform -translate-x-1/2">
+            <div className="absolute bottom-[-130px] sm:bottom-[-220px] md:bottom-[-300px] lg:bottom-[-360px] xl:bottom-[-420px] left-1/2 transform -translate-x-1/2">
                 <svg
                     width="1050px"
                     height="700px"
                     viewBox={`${-radius - 70} ${-radius - 10} ${radius * 2 + 140} ${radius + 90}`}
+                    className="w-[300px] h-[200px] sm:w-[500px] sm:h-[300px] md:w-[700px] md:h-[400px] lg:w-[850px] lg:h-[500px] xl:w-[1000px] xl:h-[600px]"
                 >
                     <g filter="url(#tickShadow)">{tickLines}</g>
                     <defs>
