@@ -20,10 +20,8 @@ export default function Container({
     }
 
     return (
-        <div className={`w-full`}>
-            <div className={`mx-auto ${maxWClass} ${pxClass} ${className}`}>
-                {children}
-            </div>
+        <div className={`w-full mx-auto ${maxWClass} ${pxClass} ${className}`}>
+            {children}
         </div>
     );
 }

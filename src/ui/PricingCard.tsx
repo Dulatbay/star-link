@@ -110,7 +110,7 @@ export default function PricingCard({
                     <hr className={`w-full ${palette.hr}`}/>
                 </div>
 
-                <CustomButton onClick={onCtaClick}>{ctaText}</CustomButton>
+                <CustomButton onClick={onCtaClick} className="rounded-2xl">{ctaText}</CustomButton>
             </div>
         </div>
     );

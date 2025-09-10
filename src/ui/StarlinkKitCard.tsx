@@ -50,7 +50,7 @@ export default function StarlinkKitCard({
 
                 {description && PriceBlock}
 
-                <CustomButton onClick={onCtaClick} className="max-w-[305px]">{ctaText}</CustomButton>
+                <CustomButton onClick={onCtaClick} className="max-w-[305px] rounded-lg">{ctaText}</CustomButton>
             </div>
         </>
     );
